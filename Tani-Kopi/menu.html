@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Menu</title>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link media="all" rel="stylesheet" href="./src/css/all.css" />
+    <link media="all" rel="stylesheet" href="./src/css/fontawesome.css" />
+
+    <link media="all" rel="stylesheet" href="./src/css/menu.css" />
+    <link media="all" rel="stylesheet" href="./src/css/product.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-wrap">
+        <div class="mobile-nav">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+          <a href="/">
+            <img src="./assets/Logo.png" alt="Tani Kopi" />
+          </a>
+        </div>
+        <nav>
+          <div class="nav-wrap">
+            <a href="./menu.html">Menu</a>
+            <a href="./about-us.html">About Us</a>
+            <a href="./contact-us.html">Contact Us</a>
+          </div>
+        </nav>
+        <div class="cart-button">
+          <svg
+            width="73"
+            height="74"
+            viewBox="0 0 73 74"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.1665 12.6667H20.0249C20.6332 12.6667 20.9374 12.6667 21.1574 12.8385C21.3774 13.0103 21.4512 13.3053 21.5987 13.8955L23.7188 22.3758C24.0138 23.5561 24.1614 24.1462 24.6014 24.4898C25.0415 24.8334 25.6498 24.8334 26.8664 24.8334H30.4165"
+              stroke="#222"
+              stroke-width="3.24444"
+              stroke-linecap="round"
+            />
+            <path
+              d="M54.75 52.2083H20.5007C19.4737 52.2083 18.9601 52.2083 18.7173 51.8715C18.4746 51.5346 18.637 51.0474 18.9617 50.0731L20.5522 45.3018C20.9091 44.2311 21.0875 43.6957 21.5124 43.3895C21.9372 43.0833 22.5015 43.0833 23.6301 43.0833H42.5833"
+              stroke="#222"
+              stroke-width="3.24444"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M50.7056 43.0833H25.7074C24.9144 43.0833 24.2376 42.51 24.1072 41.7278L21.5276 26.25C21.404 25.5084 21.9759 24.8333 22.7277 24.8333H59.5208C60.1237 24.8333 60.5159 25.4679 60.2462 26.0072L52.1565 42.1866C51.8818 42.7362 51.32 43.0833 50.7056 43.0833Z"
+              stroke="#222"
+              stroke-width="3.24444"
+              stroke-linecap="round"
+            />
+            <circle cx="51.7082" cy="61.3334" r="3.04167" fill="#222" />
+            <circle cx="27.3752" cy="61.3334" r="3.04167" fill="#222" />
+          </svg>
+          <span id="cart-count" class="cart-count"></span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrap">
+        <h2 class="title">Our Menu</h2>
+
+        <div class="menu-wrap">
+          <div class="tab"></div>
+
+          <div class="overlay" onclick="closePopup()"></div>
+          <div class="popup"></div>
+          <div class="menu-list">
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Americano.png" />
+                </div>
+                <h3>Americano</h3>
+                <p class="category">Coffee</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 7.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Avocado-coffee.png" />
+                </div>
+                <h3>Avocado Coffee</h3>
+                <p class="category">Coffee</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 19.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Strawberry-coffee.png" />
+                </div>
+                <h3>Strawberry Coffee</h3>
+                <p class="category">Coffee</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 19.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Coffee-taro.png" />
+                </div>
+                <h3>Taro Coffee</h3>
+                <p class="category">Coffee</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 11.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Caramel-macchiato.png" />
+                </div>
+                <h3>Caramel Macchiato</h3>
+                <p class="category">Coffee</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 21.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Horchata-cold-brew.png" />
+                </div>
+                <h3>Horchata Cold Brew</h3>
+                <p class="category">Coffee</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 22.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Mocha-mint.png" />
+                </div>
+                <h3>Mocha Mint</h3>
+                <p class="category">Coffee</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 15.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Strawberry-milk.png" />
+                </div>
+                <h3>Strawberry Milk</h3>
+                <p class="category">Milk</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 14.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Avocado-choco.png" />
+                </div>
+                <h3>Avocado Choco</h3>
+                <p class="category">Milk</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 20.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Choco-milkshake.png" />
+                </div>
+                <h3>Choco Milkshake</h3>
+                <p class="category">Milk</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 15.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Vanilla-milkshake.png" />
+                </div>
+                <h3>Vanila Milkshake</h3>
+                <p class="category">Milk</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 15.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Strawberry-milkshake.png" />
+                </div>
+                <h3>Strawberry Milkshake</h3>
+                <p class="category">Milk</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 15.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Blueberry-milkshake.png" />
+                </div>
+                <h3>Blueberry Milkshake</h3>
+                <p class="category">Milk</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 15.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Mocca-milkshake.png" />
+                </div>
+                <h3>Mocca Milkshake</h3>
+                <p class="category">Milk</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 15.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Mint-milkshake.png" />
+                </div>
+                <h3>Mint Milkshake</h3>
+                <p class="category">Milk</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 15.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Avocado-milkshake.png" />
+                </div>
+                <h3>Avocado Milkshake</h3>
+                <p class="category">Milk</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 17.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Matcha-milkshake.png" />
+                </div>
+                <h3>Matcha Milkshake</h3>
+                <p class="category">Milk</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 17.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Taro-milkshake.png" />
+                </div>
+                <h3>Taro Milkshake</h3>
+                <p class="category">Milk</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 17.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Dark-choco-milkshake.png" />
+                </div>
+                <h3>Dark Choco Milkshake</h3>
+                <p class="category">Milk</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 17.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Lime-squash.png" />
+                </div>
+                <h3>Lime Squash</h3>
+                <p class="category">Soda</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 13.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Lemon-squash.png" />
+                </div>
+                <h3>Lemon Squash</h3>
+                <p class="category">Soda</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 13.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Mango-squash.png" />
+                </div>
+                <h3>Mango Squash</h3>
+                <p class="category">Soda</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 15.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Pear-mojito.png" />
+                </div>
+                <h3>Pear Mojito</h3>
+                <p class="category">Soda</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 15.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Ice-tea.png" />
+                </div>
+                <h3>Ice Tea</h3>
+                <p class="category">Tea</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 4.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Lemon-tea.png" />
+                </div>
+                <h3>Lemon Tea</h3>
+                <p class="category">Tea</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 6.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Thai-tea-strawberry.png" />
+                </div>
+                <h3>Thai Tea Strawberry</h3>
+                <p class="category">Tea</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 18.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Green-tea-strawberry.png" />
+                </div>
+                <h3>Green Tea Strawberry</h3>
+                <p class="category">Tea</p>
+                <div class="product-choice">
+                  <div class="size"></div>
+                  <div class="type"></div>
+                  <div class="sugar"></div>
+                </div>
+                <div class="price">Rp 20.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Chicken-nuggets.png" />
+                </div>
+                <h3>Chicken Nuggets</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 11.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Sausage-swirls.png" />
+                </div>
+                <h3>Sausage Swirls</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 10.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/French-fries.png" />
+                </div>
+                <h3>French Fries</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 7.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Sweet-chicken-morsels.png" />
+                </div>
+                <h3>Sweet Chicken Morsels</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 18.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Vanilla-icecream.png" />
+                </div>
+                <h3>Vanilla Icecream</h3>
+                <p class="category">Dessert</p>
+                <div class="price">Rp 7.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Chocolate-icecream.png" />
+                </div>
+                <h3>Chocolate Icecream</h3>
+                <p class="category">Dessert</p>
+                <div class="price">Rp 7.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Strawberry-icecream.png" />
+                </div>
+                <h3>Strawberry Icecream</h3>
+                <p class="category">Dessert</p>
+                <div class="price">Rp 7.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Greentea-icecream.png" />
+                </div>
+                <h3>Greentea Icecream</h3>
+                <p class="category">Dessert</p>
+                <div class="price">Rp 7.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Choco-donut.png" />
+                </div>
+                <h3>Choco Donut</h3>
+                <p class="category">Dessert</p>
+                <div class="price">Rp 7.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Oreo-donut.png" />
+                </div>
+                <h3>Oreo Donut</h3>
+                <p class="category">Dessert</p>
+                <div class="price">Rp 8.500</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Chocolate-cookies.png" />
+                </div>
+                <h3>Chocolate Cookies</h3>
+                <p class="category">Dessert</p>
+                <div class="price">Rp 4.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Chocochip-cookies.png" />
+                </div>
+                <h3>Chocochip Cookies</h3>
+                <p class="category">Dessert</p>
+                <div class="price">Rp 4.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Strawberry-cookies.png" />
+                </div>
+                <h3>Strawberry Cookies</h3>
+                <p class="category">Dessert</p>
+                <div class="price">Rp 4.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Chocolate-muffin.png" />
+                </div>
+                <h3>Chocolate Muffin</h3>
+                <p class="category">Dessert</p>
+                <div class="price">Rp 6.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Mocca-muffin.png" />
+                </div>
+                <h3>Mocca Muffin</h3>
+                <p class="category">Dessert</p>
+                <div class="price">Rp 6.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Red-velvet-cake.png" />
+                </div>
+                <h3>Red Velvet Cake</h3>
+                <p class="category">Dessert</p>
+                <div class="price">Rp 12.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Tuxedo-cake.png" />
+                </div>
+                <h3>Tuxedo Cake</h3>
+                <p class="category">Dessert</p>
+                <div class="price">Rp 12.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Berry-cheesecake.png" />
+                </div>
+                <h3>Berry Cheesecake</h3>
+                <p class="category">Dessert</p>
+                <div class="price">Rp 17.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Chocolate-croissant.png" />
+                </div>
+                <h3>Chocolate Croissant</h3>
+                <p class="category">Dessert</p>
+                <div class="price">Rp 12.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Fudgy-brownies.png" />
+                </div>
+                <h3>Fudgy Brownies</h3>
+                <p class="category">Dessert</p>
+                <div class="price">Rp 8.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Tiramisu-cinnamon-roll.png" />
+                </div>
+                <h3>Tiramisu Cinnamonroll</h3>
+                <p class="category">Dessert</p>
+                <div class="price">Rp 11.000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Modal HTML structure -->
+    <div id="cartModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Cart Items</h2>
+          <span class="close">&times;</span>
+        </div>
+        <div id="cartItemsContainer"></div>
+        <div id="modal-footer">
+          <div class="dropdown">
+            <button class="dropbtn" id="dropbtn">Dine In</button>
+            <div class="dropdown-content" id="dropdown-content">
+              <a data-value="Dine In">Dine In</a>
+              <hr />
+              <a data-value="Take Away">Take Away</a>
+            </div>
+          </div>
+          <div class="checkout">
+            <p id="total-price"></p>
+            <span href="">Check Out</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-wrap">
+        <div class="left">
+          <h3>Contacts</h3>
+          <div class="location">
+            <p>
+              <i class="fas fa-map-marker-alt"></i
+              ><span>F. Pertanian Rd., Brawijaya University</span>
+            </p>
+            <p><i class="fab fa-instagram"></i><span>@tanie_kopi</span></p>
+            <p>
+              <i class="fas fa-phone-alt"></i><span>+62 856 5414 1926</span>
+            </p>
+          </div>
+        </div>
+        <div class="middle">
+          <h2>Tani Kopi</h2>
+          <p class="desc">A Sip of Tradition, A Taste of Perfection</p>
+          <div class="social">
+            <a href="#" target="_blank" rel="nofollow external"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" target="_blank" rel="nofollow external"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" target="_blank" rel="nofollow external"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" target="_blank" rel="nofollow external"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+            <a href="#" target="_blank" rel="nofollow external"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="right">
+          <h3>Working Hours</h3>
+          <div class="work-hours">
+            <p><span>Mon - Fri</span><span>7.00 AM - 4.00 PM</span></p>
+            <p><span>Sat - Sun</span><span>12.00 AM - 4.00 PM</span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./src/js/menu.js"></script>
+    <script src="./src/js/all.js"></script>
+  </body>
+</html>

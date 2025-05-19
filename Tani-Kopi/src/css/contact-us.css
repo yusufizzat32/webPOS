@@ -1,0 +1,91 @@
+main {
+    padding: 60px 30px 0;
+}
+
+main .wrap {
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+h2.title {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-bottom: 40px;
+}
+
+.form {
+    display: grid;
+    gap: 30px;
+    margin-left: 30px;
+}
+
+.form .name,
+.form .email,
+.form .msg {
+    display: grid;
+    gap: 8px;
+}
+
+.form label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form input,
+.form textarea {
+    border: 1px solid var(--primary);
+    border-radius: 88px;
+    padding: 10px 20px;
+}
+
+.form textarea {
+    border-radius: 10px;
+    min-height: 100px;
+    padding: 15px 20px;
+}
+
+.form .submit {
+    background: var(--primary);
+    border: none;
+    color: var(--secondary);
+    padding: 10px 20px;
+    border-radius: 88px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary);
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.form .submit:hover {
+    background: transparent;
+    color: var(--primary);
+}
+
+.img {
+    background: url(../../assets/toko.jpg) center / cover no-repeat;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        grid-template-columns: 100%;
+    }
+
+    .form {
+        margin-right: 0;
+    }
+
+    .img {
+        height: 150px;
+        margin-top: 30px;
+    }
+}
